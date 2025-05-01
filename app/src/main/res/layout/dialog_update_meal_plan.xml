@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etUpdateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/etUpdateDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date" />
+
+    <EditText
+        android:id="@+id/etUpdateBreakfast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Breakfast" />
+
+    <EditText
+        android:id="@+id/etUpdateLunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lunch" />
+
+    <EditText
+        android:id="@+id/etUpdateDinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dinner" />
+
+    <EditText
+        android:id="@+id/etUpdateSnack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Snack" />
+
+</LinearLayout>

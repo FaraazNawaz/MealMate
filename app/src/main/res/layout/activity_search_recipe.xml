@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="16dp"
+    tools:context=".activity.SearchRecipeActivity">
+
+    <EditText
+        android:id="@+id/etSearchRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/white_rounded"
+        android:hint="Enter meal name"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnSearchRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearchRecipe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnSearchRecipe"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

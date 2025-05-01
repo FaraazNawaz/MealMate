@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- nav_graph.xml -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mealPlanFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uk.ac.aston.cs3mdd.mealmate.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <!-- Define any arguments or actions specific to MealPlanFragment -->
+        <!-- Example action: <action ... /> -->
+        <action
+            android:id="@+id/action_homeFragment_to_mealPlanFragment"
+            app:destination="@id/mealPlanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_randomRecipes"
+            app:destination="@id/randomRecipeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_shoppingListFragment"
+            app:destination="@id/shoppingListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_groceryStoreFragment"
+            app:destination="@id/groceryStoreFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mealPlanFragment"
+        android:name="uk.ac.aston.cs3mdd.mealmate.fragment.ListMealPlanFragment"
+        android:label="Meal Plan"
+        tools:layout="@layout/fragment_meal_plan">
+        <!-- Define any arguments or actions specific to MealPlanFragment -->
+        <!-- Example action: <action ... /> -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/randomRecipeFragment"
+        android:name="uk.ac.aston.cs3mdd.mealmate.fragment.RandomRecipeFragment"
+        android:label="Random Recipe"
+        tools:layout="@layout/fragment_recipes">
+        <!-- Define any arguments or actions specific to RandomRecipeFragment -->
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="uk.ac.aston.cs3mdd.mealmate.fragment.ShoppingListFragment"
+        android:label="Random Recipe"
+        tools:layout="@layout/fragment_shopping_list">
+        <!-- Define any arguments or actions specific to RandomRecipeFragment -->
+        <action
+            android:id="@+id/action_shoppingListFragment_to_groceryStoreFragment"
+            app:destination="@id/groceryStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groceryStoreFragment"
+        android:name="uk.ac.aston.cs3mdd.mealmate.fragment.GroceryStoreFragment"
+        android:label="Random Recipe"
+        tools:layout="@layout/fragment_grocery_store">
+        <!-- Define any arguments or actions specific to RandomRecipeFragment -->
+    </fragment>
+
+    <!-- Example action to navigate from MealPlanFragment to RandomRecipeFragment -->
+    <action
+        android:id="@+id/action_mealPlanFragment_to_randomRecipeFragment"
+        app:destination="@id/randomRecipeFragment" />
+
+    <!-- Define other actions as needed -->
+
+</navigation>

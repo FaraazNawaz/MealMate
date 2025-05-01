@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Meal Mate</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="add_meal_plan">meal</string>
+    <string name="API_KEY">AIzaSyA6NN2etJW_llj4rU3kknxIzbfoolmecqE</string>
+</resources>
